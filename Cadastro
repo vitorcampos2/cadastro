@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<form>
+    Name do candidato :<br><input type="text"id="nomeUsuario">
+    <br><br>
+    Data de Nascimento:<meta charset="UTF-8">
+<title>Exemplo Imput type = date.</title>
+    <input type="date">
+    <br><br>
+    Email:*<br><input type="text"id="Email">
+    <br><br>
+    <label style="cargo">Cargo</label>
+    <br><br>
+    <select id=cargo>
+    <option value="" ></option>
+    <option value="adm" >Adm</option>
+    <option value="enf" >Enfermagem</option>
+    <option value="inf" >Informaticac</option>
+    
+   <script> 
+       var nomedocandidato = document.getElementById("nomeUsuario").value;
+            console.log(nome);
+            var datadenascimento=document.getElementById("datadenascimento").value;
+            var email=document.getElementById("email").value;
+            function validar(){
+                var nomedocandidato= document.getElementById("nomeUsuario").value;
+                var datadenascimento= document.getElementById("datadenascimento").value;
+                var email= document.getElementById("email").value;
+                var cargo= document.getElementById("cargo").value;
+              
+                var arr=[];
+                arr.push(nomedocandidato);
+                arr.push(datadenascimento);
+                arr.push(email);
+                arr.push(cargo);
+             
+                for(var i= 0; i < arr.length;i++){
+                    if(arr[i]==false){
+                        alert("campo obrigatorio vazio");
+                        return;
+                    }
+                }
+            }
+      
+    </script>
+</body>
+
+    </html>
+    
